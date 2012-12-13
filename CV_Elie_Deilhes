@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="CV_style.css" />
+        <title>Élie Deilhes - Curiculum Vitae</title>
+    </head>
+
+    <body>
+        <div id="main_wrapper">
+        
+            <header>
+                <div id="titre_principal">
+                    <img src="images/Photo_Elie.jpg" alt="Photo de Élie Deilhes" id="photo" />
+                    <h1>Élie Deilhes</h1>
+                    <h2>Développeur web 3.0</h2>
+                </div>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Expérience</a></li>
+                    <li><a href="#">Formation</a></li>
+                    <li><a href="#">Compétences</a></li>
+                    <li><a href="#">Loisirs</a></li>
+                </ul>
+            </nav>
+            
+            <section id="Experience">
+            <header>
+            	<h1>Expérience</h1>
+            </header>
+            
+                <article>
+                    <h1>Technicien en Support Industriel</h1>
+                    <h2>GSK Vaccine</h2>
+                    <img src="images/gskLogo.png" alt="GSK" id="logo"/>
+                    <ul>
+                        <li>Opérations de l'usine pilote</li>
+                        <li>Amélioration continue (LEAN)</li>
+                        <li>Formation</li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h1>Technicien en Production</h1>
+                    <h2>GSK Vaccine</h2>
+                    <img src="images/gskLogo.png" alt="GSK" id="logo"/>
+                    <ul>
+                        <li>Salle blanche</li>
+                        <li>GMP</li>
+                    </ul>
+                </article>
+            </section>
+            
+            <section id="Formation">
+            <header>
+            	<h1>Formation</h1>
+            </header>
+            
+                <article>
+                    <h1>Certificat en informatique</h1>
+                    <h2>Université Laval</h2>
+                    <img src="images/ul_logol.png" alt="U Laval" id="logo"/>
+                    <ul>
+                        <li>spécialisation en analyse et bases de données</li>
+                        <li>projet d'étude Magento</li>
+                    </ul>
+                </article>
+                
+            </section>
+
+            <footer>
+            	
+            	<address>
+            		<p>Élie Deilhes</p>
+            	</adress>
+            	
+                <div id="liens">
+                    <h1>Pour me joindre</h1>
+                    <ul>
+                        <li>Courriel</li>
+                        <li>LinkedIn</li>
+                        <li>Téléphone</li>
+                        <li>Cellulaire</li>
+                    </ul>
+                </div>
+            </footer>
+            
+        </div>
+    </body>
+</html>
