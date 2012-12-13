@@ -11,7 +11,7 @@
         <div id="main_wrapper">
         
             <header>
-                <div id="titre_principal">
+            	<div id="titre_principal">
                     <img src="images/Photo_Elie.jpg" alt="Photo de Élie Deilhes" id="photo" />
                     <h1>Élie Deilhes</h1>
                     <h2>Développeur web 3.0</h2>
