@@ -10,3 +10,9 @@ mon CV en HTML 5 / CSS 3
 3-Préparer une base de données avec mes infos perso (formation expérience, compétences)
 
 4-Automatiser la création du code source à partir de ma base de données perso
+
+---------
+Optimisation possible:
+
+- Menu déroulant javascript
+- Effet parallaxe
