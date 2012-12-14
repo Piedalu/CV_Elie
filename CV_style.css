@@ -22,11 +22,22 @@ section h1, footer h1, nav a
 #titre_principal
 {
 	background:url('images/banniere-cv.png');
-	background-repeat:none;
 	width:900px;
 	height:120px;
-	padding:10px;
 }
+
+p, header h1, header h2
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+#photo
+{
+	height: 85px;
+}
+
 header h1
 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -34,20 +45,12 @@ header h1
     font-weight: normal;
 }
 
-#photo, header h1, header h2
-{
-    display: inline-block;
-    margin-left:20px;
-    margin-bottom: 0px;
-    height: 90px;
-}
-
 header h2
 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.1em;
-    margin-top: 0px;
+    font-size: 1.3em;
     font-weight: normal;
+    vertical-align: bottom;
 }
 
 /* Navigation */
