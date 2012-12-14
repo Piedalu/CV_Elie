@@ -62,7 +62,7 @@
                 <article>
                     <h1>Certificat en informatique</h1>
                     <h2>Université Laval</h2>
-                    <img src="images/ul_logol.png" alt="U Laval" id="logo"/>
+                    <img src="images/ul_logo.png" alt="U Laval" id="logo"/>
                     <ul>
                         <li>spécialisation en analyse et bases de données</li>
                         <li>projet d'étude Magento</li>
