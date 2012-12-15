@@ -35,7 +35,7 @@
                 <article>
                     <h1>Technicien en Support Industriel</h1>
                     <h2>GSK Vaccine</h2>
-                    <img src="images/gskLogo.png" alt="GSK" id="logo"/>
+                    <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
                     <ul>
                         <li>Opérations de l'usine pilote</li>
                         <li>Amélioration continue (LEAN)</li>
@@ -46,7 +46,7 @@
                 <article>
                     <h1>Technicien en Production</h1>
                     <h2>GSK Vaccine</h2>
-                    <img src="images/gskLogo.png" alt="GSK" id="logo"/>
+                    <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
                     <ul>
                         <li>Salle blanche</li>
                         <li>GMP</li>
@@ -62,7 +62,7 @@
                 <article>
                     <h1>Certificat en informatique</h1>
                     <h2>Université Laval</h2>
-                    <img src="images/ul_logo.png" alt="U Laval" id="logo"/>
+                    <p><img src="images/ul_logo.png" alt="U Laval" id="logo"/></p>
                     <ul>
                         <li>spécialisation en analyse et bases de données</li>
                         <li>projet d'étude Magento</li>
@@ -80,10 +80,10 @@
                 <div id="liens">
                     <h1>Pour me joindre</h1>
                     <ul>
-                        <li>Courriel</li>
-                        <li>LinkedIn</li>
-                        <li>Téléphone</li>
-                        <li>Cellulaire</li>
+                        <li><img src="images/courriel.jpg" alt="Courriel" id="icone"/><a href="mailto:elie.deilhes.1@ulaval.ca">Courriel</a></li>
+                        <li><img src="images/linkedin.jpg" alt="LinkedIn" id="icone"/><a href= "http://www.linkedin.com/in/eliedeilhes/"http://>Mon profil LinkedIn</a></li>
+                        <li><img src="images/tel.png" alt="Téléphone" id="icone"/>Tel: 418-525-9792</li>
+                        <li><img src="images/cell.png" alt="Cellulaire" id="icone"/>Cell: 18-440-6215</li>
                     </ul>
                 </div>
             </footer>

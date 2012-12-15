@@ -127,12 +127,24 @@ article
     height: 75px;
 }
 
+article h2
+{
+	float:right;
+}
+
 article p
 {
     font-size: 0.8em;
 }
 
 /* Footer */
+
+footer
+{	
+	position: fixed;
+	bottom: 5px;
+	margin: auto;
+}
 
 footer p,
 {
@@ -142,4 +154,17 @@ footer p,
 footer h1
 {
     font-size: 1.1em;
+}
+
+footer li
+{
+	list-style-type: none;
+	height: 35px;
+}
+#icone
+{
+	height: 25px;
+	margin-right : 15px;
+	display: inline-block;
+	vertical-align: middle;
 }
