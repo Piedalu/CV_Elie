@@ -8,86 +8,136 @@
     </head>
 
     <body>
-        <div id="main_wrapper">
+    
+        <header id="titre_principal">
+            <p><img src="images/Photo_Elie.jpg" alt="Photo de Élie Deilhes" id="photo" /></p>
+            <h1>Élie Deilhes</h1>
+            <h2>Développeur web</h2>
+        </header>
         
-            <header>
-            	<div id="titre_principal">
-                    <p><img src="images/Photo_Elie.jpg" alt="Photo de Élie Deilhes" id="photo" /></p>
-                    <h1>Élie Deilhes</h1>
-                    <h2>Développeur web 3.0</h2>
-                </div>
-            </header>
+        <nav>
+        	<button onclick="var sect = document.getElementById('Competences');if(sect.className =='on'){sect.className='';}else{sect.className='on'}">Compétences</button>
+            <button onclick="var sect = document.getElementById('Experience');if(sect.className =='on'){sect.className='';}else{sect.className='on'}">Expérience</button>
+            <button onclick="var sect = document.getElementById('Formation');if(sect.className =='on'){sect.className='';}else{sect.className='on'}">Formation</button>
+            <button onclick="var sect = document.getElementById('Interets');if(sect.className =='on'){sect.className='';}else{sect.className='on'}">Intérêts</button>
+        </nav>
+        
+        <section id="Competences" class = "on">
+        	<header>
+            	<h1>Compétences</h1>
+        	</header>
             
-            <nav>
-                <ul>
-                    <li><a href="#">Expérience</a></li>
-                    <li><a href="#">Formation</a></li>
-                    <li><a href="#">Compétences</a></li>
-                    <li><a href="#">Loisirs</a></li>
-                </ul>
-            </nav>
+        	<dl>
+            	<dt>HTML</dt>
+                <dd>95%</dd>
+                <dt>HTML</dt>
+                <dd>90%</dd>
+                <dt>Javascript</dt>
+                <dd>65%</dd>
+            </dl>
             
-            <section id="Experience">
-            <header>
+        </section>
+        
+        <section id="Experience">
+        	<header>
             	<h1>Expérience</h1>
-            </header>
+        	</header>
+        
+            <article>
+                <h1>Technicien en Support Industriel</h1>
+                <h2>GSK Vaccine</h2>
+                <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
+                <ul>
+                    <li>Opérations de l'usine pilote</li>
+                    <li>Amélioration continue (LEAN)</li>
+                    <li>Formation</li>
+                </ul>
+                <aside class="realisation">
+                    <h1>Présentation d'accueil SST</h1>
+                    <p>Monté une présentation d'accueil du département, incluant des capsules vidéos sur les risques SST spécifiques. Résultat salué par les gestionnaires</p>
+                </aside>
+                <aside class="realisation">
+                    <h1>Sas matériel</h1>
+                    <p>Réalisé un projet de sas matériel (dans un contexte règlementé) qui a permis de diminuer les déplacements de personnel ainsi que les risques de contamination reliés</p>
+                </aside>
+            </article>
             
-                <article>
-                    <h1>Technicien en Support Industriel</h1>
-                    <h2>GSK Vaccine</h2>
-                    <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
-                    <ul>
-                        <li>Opérations de l'usine pilote</li>
-                        <li>Amélioration continue (LEAN)</li>
-                        <li>Formation</li>
-                    </ul>
-                </article>
-                
-                <article>
-                    <h1>Technicien en Production</h1>
-                    <h2>GSK Vaccine</h2>
-                    <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
-                    <ul>
-                        <li>Salle blanche</li>
-                        <li>GMP</li>
-                    </ul>
-                </article>
-            </section>
-            
-            <section id="Formation">
-            <header>
+            <article>
+                <h1>Technicien en Production</h1>
+                <h2>GSK Vaccine</h2>
+                <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
+                <ul>
+                    <li>Salle blanche</li>
+                    <li>GMP</li>
+                </ul>
+            </article>
+        </section>
+        
+        <section id="Formation">
+        	<header>
             	<h1>Formation</h1>
-            </header>
-            
-                <article>
-                    <h1>Certificat en informatique</h1>
-                    <h2>Université Laval</h2>
-                    <p><img src="images/ul_logo.png" alt="U Laval" id="logo"/></p>
+        	</header>
+        
+            <article>
+                <h1>Certificat en informatique</h1>
+                <h2>Université Laval</h2>
+                <p><img src="images/ul_logo.png" alt="U Laval" id="logo"/></p>
+                <ul>
+                    <li>spécialisation en analyse et bases de données</li>
+                    <li>projet d'étude Magento</li>
+                </ul>
+                <aside class="cours">
+                    <h1>Cours suivis</h1>
                     <ul>
-                        <li>spécialisation en analyse et bases de données</li>
-                        <li>projet d'étude Magento</li>
+                        <li>Algorithmique et programmation</li>
+                        <li>Structure interne des ordinateurs</li>
+                        <li>Structures de données</li>
+                        <li>Modèles et langages des bases de données</li>
+                        <li>Analyse et conception des systèmes orientés objets</li>
+                        <li>Systèmes et technologies de l'information</li>
+                        <li>Informatique d'enquête</li>
+                        <li>Analyse et conception de systèmes d'information</li>
+                        <li>Technologie pour les affaires électroniques</li>
                     </ul>
-                </article>
-                
-            </section>
-
-            <footer>
-            	
-            	<address>
-            		<p>Élie Deilhes</p>
-            	</adress>
-            	
-                <div id="liens">
-                    <h1>Pour me joindre</h1>
-                    <ul>
-                        <li><img src="images/courriel.jpg" alt="Courriel" id="icone"/><a href="mailto:elie.deilhes.1@ulaval.ca">Courriel</a></li>
-                        <li><img src="images/linkedin.jpg" alt="LinkedIn" id="icone"/><a href= "http://www.linkedin.com/in/eliedeilhes/"http://>Mon profil LinkedIn</a></li>
-                        <li><img src="images/tel.png" alt="Téléphone" id="icone"/>Tel: 418-525-9792</li>
-                        <li><img src="images/cell.png" alt="Cellulaire" id="icone"/>Cell: 18-440-6215</li>
-                    </ul>
-                </div>
-            </footer>
+                </aside>
+            </article>
             
-        </div>
+        </section>
+        
+        <section id="Interets">
+          <header>
+              <h1>Intérêts</h1>
+          </header>
+        
+          <article>
+              <h1>Intérêts reliés à l'informatique</h1>
+              <ul>
+                  <li>Prezi</li>
+                  <li>Applications mobile (Cocoa, Android)</li>
+              </ul>
+          </article>
+            
+        </section>
+    
+        <footer>
+            
+            <address>
+                <p>Élie Deilhes</br>
+                3049 rue Ratté</br>
+                St-Augustin (QC)</br>
+                G3A 2M3</p>
+            </adress>
+            
+            <div id="liens">
+                <h1>Pour me joindre</h1>
+                <ul>
+                    <li><img src="images/courriel.jpg" alt="Courriel" id="icone"/><a href="mailto:elie.deilhes.1@ulaval.ca">Courriel</a></li>
+                    <li><img src="images/linkedin.jpg" alt="LinkedIn" id="icone"/><a href= "http://www.linkedin.com/in/eliedeilhes/"http://>Mon profil LinkedIn</a></li>
+                    <li><img src="images/tel.png" alt="Téléphone" id="icone"/>Tel: 418-525-9792</li>
+                    <li><img src="images/cell.png" alt="Cellulaire" id="icone"/>Cell: 18-440-6215</li>
+                </ul>
+            </div>
+        </footer>
+            
     </body>
 </html>
