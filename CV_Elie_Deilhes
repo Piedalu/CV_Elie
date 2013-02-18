@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="CV_style.css" />
         <script>
-    		function ReduireSection()
+			function ReduireSection()
 			{
 				var competences = document.getElementById('Competences');
 				var experience = document.getElementById('Experience');
@@ -69,9 +69,9 @@
         	</header>
         
             <article>
+                <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
                 <h1>Technicien en Support Industriel</h1>
                 <h2>GSK Vaccine</h2>
-                <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
                 <ul>
                     <li>Opérations de l'usine pilote</li>
                     <li>Amélioration continue (LEAN)</li>
@@ -88,9 +88,9 @@
             </article>
             
             <article>
+                <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
                 <h1>Technicien en Production</h1>
                 <h2>GSK Vaccine</h2>
-                <p><img src="images/gskLogo.png" alt="GSK" id="logo"/></p>
                 <ul>
                     <li>Salle blanche</li>
                     <li>GMP</li>
@@ -104,9 +104,9 @@
         	</header>
         
             <article>
+                <p><img src="images/ul_logo.png" alt="U Laval" id="logo"/></p>
                 <h1>Certificat en informatique</h1>
                 <h2>Université Laval</h2>
-                <p><img src="images/ul_logo.png" alt="U Laval" id="logo"/></p>
                 <ul>
                     <li>spécialisation en analyse et bases de données</li>
                     <li>projet d'étude Magento</li>
@@ -146,20 +146,19 @@
     
         <footer>
             
-            <address>
-                <p>Élie Deilhes</br>
-                3049 rue Ratté</br>
-                St-Augustin (QC)</br>
-                G3A 2M3</p>
-            </adress>
-            
             <div id="liens">
                 <h1>Pour me joindre</h1>
+                <address>
+                    <p>Élie Deilhes</br>
+                    3049 rue Ratté</br>
+                    St-Augustin (QC)</br>
+                    G3A 2M3</p>
+                </address>
                 <ul>
                     <li><img src="images/courriel.jpg" alt="Courriel" id="icone"/><a href="mailto:elie.deilhes.1@ulaval.ca">Courriel</a></li>
                     <li><img src="images/linkedin.jpg" alt="LinkedIn" id="icone"/><a href= "http://www.linkedin.com/in/eliedeilhes/"http://>Mon profil LinkedIn</a></li>
                     <li><img src="images/tel.png" alt="Téléphone" id="icone"/>Tel: 418-525-9792</li>
-                    <li><img src="images/cell.png" alt="Cellulaire" id="icone"/>Cell: 18-440-6215</li>
+                    <li><img src="images/cell.png" alt="Cellulaire" id="icone"/>Cell: 418-440-6215</li>
                 </ul>
             </div>
         </footer>
