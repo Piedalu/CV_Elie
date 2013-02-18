@@ -58,6 +58,7 @@ p, header h2, #titre_principal h1
 {
 	font-size: 2.5em;	
 }
+
 header h1
 {
 	text-align: center;
@@ -65,7 +66,6 @@ header h1
     font-size: 1.5em;
     font-weight: normal;
 }
-
 
 header h2
 {
@@ -144,31 +144,38 @@ article
     vertical-align: top;
     text-align: justify;
     width: 625px;
-    margin-right: 15px;
+	font-size: 1em;
+}
+
+article h1
+{
+	display: inline-block;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+article h2
+{
+	font-size: 1.3em;
+}
+
+#logo
+{
+	float: left;
+	margin: 0 1.3em 0 0;
+    max-height: 75px;
+	max-width: 120px;
 }
 
 aside
 {
 	position: relative;
+	top: -50px;
+	clear: right;
 	float: right;
-	border: groove;
-}
-
-#logo
-{
-    vertical-align: middle;
-    margin-right: 8px;
-    height: 75px;
-}
-
-article h2
-{
-	float:right;
-}
-
-article p
-{
-    font-size: 0.8em;
+	width: 40%;
+	padding: 1em;
+	font-size: 0.8em;
 }
 
 /* -------------------- Footer -------------------- */
