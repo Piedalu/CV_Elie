@@ -4,25 +4,50 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="CV_style.css" />
+        <script>
+    		function ReduireSection()
+			{
+				var competences = document.getElementById('Competences');
+				var experience = document.getElementById('Experience');
+				var formation = document.getElementById('Formation');
+				var interets = document.getElementById('Interets');
+            	competences.className='';
+				experience.className='';
+				formation.className='';
+				interets.className='';
+			}
+		</script>
         <title>Élie Deilhes - Curiculum Vitae</title>
     </head>
 
     <body>
     
         <header id="titre_principal">
-            <p><img src="images/Photo_Elie.jpg" alt="Photo de Élie Deilhes" id="photo" /></p>
+        	<p><img src="images/Photo_Elie.jpg" alt="Photo de Élie Deilhes" id="photo" /></p>
             <h1>Élie Deilhes</h1>
             <h2>Développeur web</h2>
         </header>
         
         <nav>
-        	<button onclick="var sect = document.getElementById('Competences');if(sect.className =='on'){sect.className='';}else{sect.className='on'}">Compétences</button>
-            <button onclick="var sect = document.getElementById('Experience');if(sect.className =='on'){sect.className='';}else{sect.className='on'}">Expérience</button>
-            <button onclick="var sect = document.getElementById('Formation');if(sect.className =='on'){sect.className='';}else{sect.className='on'}">Formation</button>
-            <button onclick="var sect = document.getElementById('Interets');if(sect.className =='on'){sect.className='';}else{sect.className='on'}">Intérêts</button>
+        	<button onclick="ReduireSection();
+                            var sect = document.getElementById('Competences');
+                            if(sect.className =='on'){sect.className='';}else{sect.className='on'}"
+                            >Compétences</button>
+            <button onclick="ReduireSection();
+                            var sect = document.getElementById('Experience');
+                            if(sect.className =='on'){sect.className='';}else{sect.className='on'}"
+                            >Expérience</button>
+            <button onclick="ReduireSection();
+                            var sect = document.getElementById('Formation');
+                            if(sect.className =='on'){sect.className='';}else{sect.className='on'}"
+                            >Formation</button>
+            <button onclick="ReduireSection();
+                            var sect = document.getElementById('Interets');
+                            if(sect.className =='on'){sect.className='';}else{sect.className='on'}"
+                            >Intérêts</button>
         </nav>
         
-        <section id="Competences" class = "on">
+        <section id="Competences">
         	<header>
             	<h1>Compétences</h1>
         	</header>
