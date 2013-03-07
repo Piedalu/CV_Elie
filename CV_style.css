@@ -127,7 +127,7 @@ section
 
 section.on
 {
-	height: 650px;
+	height: auto;
 	padding: 1em;
 	opacity: 1;
 }
@@ -138,44 +138,66 @@ section header h1
 	margin: 0;
 }
 
+section ul
+{
+	padding-right: 10px;
+	text-align: left;
+}
+
 article
 {
-    display: inline-block;
-    vertical-align: top;
-    text-align: justify;
-    width: 625px;
+    clear: both;
+	text-align: justify;
+    width: 100%;
 	font-size: 1em;
+	margin-top: 15px;
+}
+
+article div.contenu
+{
+	float: left;
+	width: 390px;
 }
 
 article h1
 {
-	display: inline-block;
 	text-align: center;
 	font-size: 1.3em;
+}
+
+.logo
+{
+	float: left;
+	margin: 0 1.3em 0 0;
+    max-height: 50px;
+	max-width: 120px;
 }
 
 article h2
 {
 	font-size: 1.3em;
+	text-align: left;
 }
 
-#logo
-{
-	float: left;
-	margin: 0 1.3em 0 0;
-    max-height: 75px;
-	max-width: 120px;
-}
 
 aside
 {
-	position: relative;
-	top: -50px;
 	clear: right;
 	float: right;
-	width: 40%;
-	padding: 1em;
+	width: 250px;
+	margin-top: 10px;
+	border: solid 1px;
 	font-size: 0.8em;
+}
+
+aside h1
+{
+	margin: 11px 0 0;
+}
+
+aside p
+{
+	margin-right: 11px;
 }
 
 /* -------------------- Footer -------------------- */
@@ -187,7 +209,6 @@ adress, #liens
 
 footer
 {	
-	position: fixed;
 	clear: both;
 	width: 100%;
 	bottom: 0;
