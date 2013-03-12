@@ -103,7 +103,35 @@ nav button:hover
     border-bottom: 3px solid #760001;
 }
 
+/* -------------------- Liens -------------------- */
+
+#liens{
+	width: 220px;
+	float: left;
+}
+
+#liens p {
+    font-size: 0.8em;
+}
+
+#liens h1 {
+    font-size: 1.1em;
+}
+
+#liens li {
+	list-style-type: none;
+	height: 35px;
+}
+
+#liens .icone {
+	height: 25px;
+	margin-right : 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 /* -------------------- Corps -------------------- */
+
 
 section
 {
@@ -215,26 +243,3 @@ footer
 	margin:auto;
 }
 
-footer p,
-{
-    font-size: 0.8em;
-}
-
-footer h1
-{
-    font-size: 1.1em;
-}
-
-footer li
-{
-	list-style-type: none;
-	height: 35px;
-}
-
-#icone
-{
-	height: 25px;
-	margin-right : 15px;
-	display: inline-block;
-	vertical-align: middle;
-}
