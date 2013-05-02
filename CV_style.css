@@ -7,6 +7,8 @@ body
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     color: #181818;
 	margin-top: 0;
+	margin-left: 0.3em;
+	margin-right: 0.3em;
 }
 
 
@@ -116,6 +118,7 @@ nav button:hover
 
 #liens h1 {
     font-size: 1.1em;
+    margin-left: -0.8em;
     padding-left: 1.1em;
     background: #ccc;
     border-radius: 0 2em 2em 0;
