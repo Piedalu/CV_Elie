@@ -43,6 +43,11 @@ section h1, footer h1, nav button
 	);
 }
 
+#titre_principal h1
+{
+	font-size: 2.5em;	
+}
+
 #photo
 {
 	height: 85px;
@@ -54,11 +59,6 @@ p, header h2, #titre_principal h1
     display: inline-block;
     vertical-align: middle;
     margin-left: 1em;
-}
-
-#titre_principal h1
-{
-	font-size: 2.5em;	
 }
 
 header h1
@@ -89,8 +89,7 @@ nav
 	border-radius: 0 0 2em 2em;
 }
 
-nav button
-{
+nav a {
 	background: none;
 	border :none;
     font-size: 1.3em;
@@ -99,10 +98,9 @@ nav button
     text-decoration: none;
 }
 
-nav button:hover
-{
+nav a:hover {
     color: #760001;
-    border-bottom: 3px solid #760001;
+    border-bottom: 3px solid #760001
 }
 
 /* -------------------- Liens -------------------- */
@@ -145,32 +143,63 @@ nav button:hover
 
 /* -------------------- Corps -------------------- */
 
+#contenu {
+	margin: 0 auto;
+	position: relative;
+	width:650px;
+	height: auto;
+}
+
+#contenu #vide {
+	clear: both;
+}
+
+#Competences {
+  top: -336px;
+}
+
+#Experience {
+  top: -992px;
+}
+
+#Formation {
+  top: -544px;
+}
+
+#Interets {
+  top: -313px;
+}
+
+#Competences:target, #Experience:target, #Formation:target, #Interets:target {
+  top: -160px;
+}
 
 section
 {
-	height: 0px;
 	width:650px;
-	margin: 0 auto;
 	background-color: #ccc;
-	opacity: 0;
     box-shadow: 0px 2px 5px #1c1a19;
     border-radius: 0 0 5px;
     padding: 0 1em;
+    padding-top: 160px;
     font-size: 0.9em;
-	overflow:hidden;
-	
+	position: absolute;
+	overflow: hidden;
+	top: -100%;
+	z-index: -2;
 	/*Transition en CSS 3 pour afficher les sections sélectionnées*/
-	transition: all 2s linear;
-	-moz-transition: all 2s linear; /* Firefox 4 */
-	-webkit-transition: all 2s linear; /* Safari and Chrome */
-	-o-transition: all 2s linear; /* Opera */
+	transition: top 2s ease;
+	-moz-transition: top 2s ease; /* Firefox 4 */
+	-webkit-transition: top 2s ease 0.1s; /* Safari and Chrome */
+	-o-transition: top 2s ease; /* Opera */
 }
 
-section.on
-{
-	height: auto;
-	padding: 1em;
-	opacity: 1;
+section:target {
+	z-index: -1;
+}
+
+section:target header {
+	margin-top: 20px;
 }
 
 section header h1
@@ -227,6 +256,7 @@ aside
 	float: right;
 	width: 250px;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	border: solid 1px;
 	font-size: 0.8em;
 }
