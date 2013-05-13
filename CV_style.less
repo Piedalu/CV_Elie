@@ -1,0 +1,294 @@
+/* -------------------- Variables et Mixins -------------------- */
+
+/* Couleurs utilisées */
+@jaune: rgb(242,194,61);
+@rouge: rgb(176,44,44);
+@gris: #ccc;
+
+@decalageMin: -160px;
+@decalageMax: (@decalageMin - 10px);
+
+.trans-origine(@x, @y) {
+	transform-origin: @x @y;
+    -ms-transform-origin: @x @y; /* IE 9 */
+	-webkit-transform-origin: @x @y; /* Safari and Chrome */
+}
+
+.trans-rotation(@deg) {
+    transform:rotate(@deg);
+	-ms-transform:rotate(@deg); /* IE 9 */
+	-webkit-transform:rotate(@deg); /* Safari and Chrome */
+}
+
+
+/* -------------------- Général -------------------- */
+
+body
+{
+	position: relative;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color: #181818;
+	margin-top: 0;
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+}
+
+
+section h1, footer h1, nav button
+{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: #cc3333;
+    text-transform: uppercase;
+}
+
+/* -------------------- Header -------------------- */
+
+#titre_principal
+{
+	width: auto;
+	height:120px;
+	text-align:center;
+
+	/*Génération d'un dégradé en CSS 3*/
+	background-image: linear-gradient(top, @jaune 19%, @rouge 100%);
+	background-image: -o-linear-gradient(top, @jaune 19%, @rouge 100%);
+	background-image: -moz-linear-gradient(top, @jaune 19%, @rouge 100%);
+	background-image: -webkit-linear-gradient(top, @jaune 19%, @rouge 100%);
+	background-image: -ms-linear-gradient(top, @jaune 19%, @rouge 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.19, @jaune),
+		color-stop(1, @rouge)
+	);
+
+	h1 {
+		font-size: 2.5em;	
+	}
+}
+
+#photo
+{
+	height: 85px;
+	border-radius: 0.5em;
+}
+
+p, header h2, #titre_principal h1
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+header {
+	h1 {
+		text-align: center;
+		font-family: 'Comic Sans MS', cursive, sans-serif;
+	    font-size: 1.5em;
+	    font-weight: normal;
+	}
+	h2 {
+	    font-family: 'Times New Roman', Times, serif;
+	    font-size: 1.3em;
+	    font-weight: normal;
+	    vertical-align: bottom;
+	}
+}
+
+/* -------------------- Navigation -------------------- */
+
+nav
+{
+	height: 2em;
+    text-align: center;
+	background-color: @rouge;
+	margin-top:0;
+	padding-bottom: 5px;
+	border-radius: 0 0 2em 2em;
+
+	a {
+		background: none;
+		border :none;
+	    font-size: 1.3em;
+	    color: #181818;
+		margin-right: 15px;
+	    text-decoration: none;
+
+	    &:hover {
+		    color: #760001;
+		    border-bottom: 3px solid #760001
+		}
+	}
+}
+
+
+/* -------------------- Liens -------------------- */
+
+#liens{
+	width: 220px;
+	float: left;
+
+	p {
+		font-size: 0.8em;
+	}
+
+	h1 {
+		font-size: 1.1em;
+	    margin-left: -0.8em;
+	    padding-left: 1.1em;
+	    background: @gris;
+	    border-radius: 0 2em 2em 0;
+		.trans-origine(-10%, 50%);
+		.trans-rotation(4deg);
+	}
+
+	li {
+		list-style-type: none;
+		height: 35px;
+	}
+
+	.icone {
+		height: 25px;
+		margin-right : 15px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+
+/* -------------------- Corps -------------------- */
+
+#contenu {
+	margin: 0 auto;
+	position: relative;
+	width:650px;
+	min-height: 100px;
+	#vide {
+		clear: both;
+	}
+}
+
+#Competences {
+	top: (-166px + @decalageMax);
+	&:target {top: @decalageMin;}
+}
+#Experience {
+	top: (-822px + @decalageMax);
+	&:target {top: @decalageMin;}
+}
+#Formation {
+	top: (-374px + @decalageMax);
+	&:target {top: @decalageMin;}
+}
+#Interets {
+	top: (-143px + @decalageMax);
+	&:target {top: @decalageMin;}
+}
+
+section
+{
+	width:650px;
+    padding: 0 1em;
+    padding-top: -@decalageMin;
+    font-size: 0.9em;
+	position: absolute;
+	overflow: hidden;
+	z-index: -2;
+	background-color: @gris;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 0 0 5px;
+
+	/*Transition en CSS 3 pour afficher les sections sélectionnées*/
+	transition: top 2s ease;
+	-moz-transition: top 2s ease; /* Firefox 4 */
+	-webkit-transition: top 2s ease; /* Safari and Chrome */
+	-o-transition: top 2s ease; /* Opera */
+
+	header {
+		h1 {
+			color: #C30;
+			margin: 0;
+		}
+	}
+
+	ul {
+		padding-right: 10px;
+		text-align: left;
+	}
+
+	&:target {
+		header {margin-top: 20px;}
+		z-index: -1;
+	}
+}
+
+
+article
+{
+    clear: both;
+	text-align: justify;
+    width: 100%;
+	font-size: 1em;
+	margin-top: 15px;
+
+	h1 {
+		text-align: center;
+		font-size: 1.3em;
+	}
+
+	h2 {
+		font-size: 1.3em;
+		text-align: left;
+	}
+
+	div.contenu {
+		float: left;
+		width: 390px;
+	}
+}
+
+.logo
+{
+	float: left;
+	margin: 0 1.3em 0 0;
+    max-height: 50px;
+	max-width: 120px;
+}
+
+aside
+{
+	clear: right;
+	float: right;
+	width: 250px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: solid 1px;
+	font-size: 0.8em;
+
+	h1 {
+		margin: 11px 0 0;
+	}
+
+	p {
+		margin-right: 11px;
+	}
+}
+
+
+/* -------------------- Footer -------------------- */
+
+adress, #liens
+{
+	
+}
+
+footer
+{	
+	clear: both;
+	width: 100%;
+	bottom: 0;
+	margin:auto;
+}
+

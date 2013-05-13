@@ -1,9 +1,20 @@
+<?php
+require 'lessc.inc.php';
+
+try {
+     lessc::ccompile('CV_style.less', 'CV.css');
+} catch (exception $ex) {
+     exit('lessc fatal error:
+     '.$ex->getMessage());
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="CV_style.css">
+        <link rel="stylesheet" type="text/css" href="CV.css">
         <title>Élie Deilhes - Curiculum Vitae</title>
     </head>
 
@@ -44,13 +55,14 @@
                 	<h1>Compétences</h1>
             	</header>
                 
-            	<ul>
-                	<li>PHP<div class="meter"><span style="width: 95px;"></span></div>95%</li>
-                    <li>MySQL<div class="meter"><span style="width: 95px;"></span></div>95%</li>
-                    <li>HTML5<div class="meter"><span style="width: 80px;"></span></div>80%</li>
-                    <li>CSS3<div class="meter"><span style="width: 60px;"></span></div>60%</li>
-                    <li>Javascript<div class="meter"><span style="width: 55px;"></span></div>55%</li>
-                </ul>
+            	<dl>
+                	<dt>HTML</dt>
+                    <dd>95%</dd>
+                    <dt>HTML</dt>
+                    <dd>90%</dd>
+                    <dt>Javascript</dt>
+                    <dd>65%</dd>
+                </dl>
                 
             </section>
             
@@ -69,14 +81,6 @@
                             <li>Administration back-end d'un site Joomla</li>
                         </ul>
                     </div>
-                    <aside class="realisation">
-                        <h1>Intranet multifonctionnel</h1>
-                        <p>Monté une présentation d'accueil du département, incluant des capsules vidéos sur les risques SST spécifiques. Résultat salué par les gestionnaires</p>
-                        <ul>
-                            <li>Organiser la base de données (création et optimisation des tables)</li>
-                            <li>Programmation des différents modules, tests unitaires et fonctionnels</li>
-                        </ul>
-                    </aside>
                 </article>
             
                 <article>
@@ -157,12 +161,6 @@
                   <ul>
                       <li>Prezi</li>
                       <li>Applications mobile (Cocoa, Android)</li>
-                  </ul>
-                  <h1>Autres intérêts</h1>
-                  <ul>
-                      <li>Science et avancées technologiques</li>
-                      <li>Pâtisserie</li>
-                      <li>Judo</li>
                   </ul>
               </article>
                 
